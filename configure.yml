@@ -1,0 +1,3 @@
+---
+- include: playbooks/db/main.yml
+- include: playbooks/railsapp/main.yml

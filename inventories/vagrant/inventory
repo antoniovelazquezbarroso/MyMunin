@@ -1,0 +1,17 @@
+[control]
+192.168.2.55
+
+[control:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
+mysql_replication_role=slave
+server-id=2
+
+[railsapp]
+192.168.2.60
+
+[railsapp:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
+mysql_replication_role=master
+server-id=1

@@ -5,7 +5,7 @@
 ansible_ssh_user=vagrant
 ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
 mysql_replication_role=slave
-server-id=2
+mysql_server_id=2
 
 [railsapp]
 192.168.2.60
@@ -14,4 +14,4 @@ server-id=2
 ansible_ssh_user=vagrant
 ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
 mysql_replication_role=master
-server-id=1
+mysql_server_id=1

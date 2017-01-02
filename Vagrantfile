@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
 
     railsapp.vm.box = "geerlingguy/ubuntu1404"
     railsapp.vm.hostname = "railsapp"    
-    railsapp.vm.network :private_network, ip: "192.168.2.60"
+    railsapp.vm.network :private_network, ip: "192.168.2.80"
   end
 
 
@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
 
     control.vm.box = "geerlingguy/ubuntu1404"
     control.vm.hostname = "control"    
-    control.vm.network :private_network, ip: "192.168.2.55"
+    control.vm.network :private_network, ip: "192.168.2.75"
 
     control.vm.provision "ansible" do |ansible|
       ansible.playbook = "configure.yml"

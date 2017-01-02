@@ -4,3 +4,6 @@
 
   vars_files:
     - vars.yml
+
+  roles:
+    - geerlingguy.munin-node

@@ -1,0 +1,16 @@
+---
+- hosts: control
+  become: yes
+
+  vars_files:
+    - vars.yml
+
+  roles:
+    - geerlingguy.apache
+    - geerlingguy.munin
+    - geerlingguy.munin-node
+
+  tasks:
+    - name: Ammend apache.conf for Apache 2.4
+      copy: src=files/apache.conf dest=/etc/munin/apache.conf owner=root group=root mode=0644
+      

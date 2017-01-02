@@ -1,0 +1,15 @@
+---
+munin_admin_user: muninadmin
+munin_admin_password: muninadmin
+
+munin_hosts:
+  - {
+    name: "localhost",
+    address: "127.0.0.1",
+    extra: ["use_node_name yes"]
+  }
+  - {
+    name: "railsapp",
+    address: "192.168.2.80",
+    extra: ["use_node_name yes"]
+  }  
